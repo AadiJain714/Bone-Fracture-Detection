@@ -1,0 +1,189 @@
+#  Bone Fracture Detection using ResNet50
+
+A Deep Learning based Bone Fracture Detection System that analyzes X-ray images and predicts whether a bone is fractured or normal. The project utilizes Transfer Learning with ResNet50 and the MURA (Musculoskeletal Radiographs) dataset for medical image classification.
+
+---
+
+##  Project Overview
+
+Bone fracture diagnosis traditionally relies on manual examination of X-ray images by medical professionals. This project aims to assist the diagnostic process using Deep Learning and Computer Vision techniques.
+
+The system performs:
+
+- Bone Type Classification
+- Fracture Detection
+- Medical Image Analysis
+- GUI-Based Prediction System
+
+The model is trained using musculoskeletal X-ray images and leverages Transfer Learning to improve prediction performance.
+
+---
+
+##  Features
+
+- Fracture Detection from X-ray Images
+- ResNet50 Transfer Learning
+- Bone Type Classification
+- GUI-Based Application
+- Training and Prediction Modules
+- Performance Visualization using Accuracy & Loss Graphs
+- Medical Image Classification
+
+---
+
+##  Model Architecture
+
+This project uses **ResNet50**, a pre-trained Convolutional Neural Network (CNN), for image classification tasks.
+
+### Why ResNet50?
+
+- Deep Architecture (50 Layers)
+- Transfer Learning Support
+- High Classification Accuracy
+- Reduced Training Time
+- Strong Performance on Medical Imaging Tasks
+
+---
+
+##  Dataset
+
+The project uses the **MURA (Musculoskeletal Radiographs) Dataset** developed by Stanford University.
+
+### Dataset Statistics
+
+| Bone Part | Normal | Fractured | Total |
+|------------|----------|-----------|--------|
+| Elbow | 3160 | 2236 | 5396 |
+| Hand | 4330 | 1673 | 6003 |
+| Shoulder | 4496 | 4440 | 8936 |
+
+**Total Images:** 20,335+
+
+### Dataset Source
+
+https://stanfordmlgroup.github.io/competitions/mura/
+
+> Note: The dataset is not included in this repository due to its large size.
+
+---
+
+##  Project Workflow
+
+```text
+X-Ray Image
+      ↓
+Image Preprocessing
+      ↓
+Data Augmentation
+      ↓
+ResNet50 Model
+      ↓
+Bone Classification
+      ↓
+Fracture Detection
+      ↓
+Prediction Result
+```
+
+---
+
+##  Project Structure
+
+```text
+Bone-Fracture-Detection
+│
+├── mainGUI.py
+├── prediction_test.py
+├── predictions.py
+├── training_fracture.py
+├── training_parts.py
+├── requirements.txt
+│
+├── GUI Images
+├── Performance Graphs
+└── README.md
+```
+
+---
+
+##  Technologies Used
+
+- Python
+- TensorFlow
+- Keras
+- OpenCV
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-Learn
+- Deep Learning
+- Computer Vision
+
+---
+
+##  Results
+
+The model was trained and evaluated using the MURA dataset.
+
+Performance evaluation includes:
+
+- Classification Accuracy
+- Loss Analysis
+- Bone Part Prediction
+- Fracture Detection
+
+Accuracy and Loss graphs are included in the repository.
+
+---
+
+##  Installation
+
+Clone Repository
+
+```bash
+git clone https://github.com/AadiJain714/Bone-Fracture-Detection.git
+```
+
+Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run Application
+
+```bash
+python mainGUI.py
+```
+
+---
+
+## Future Improvements
+
+- Multi-Class Fracture Classification
+- Real-Time X-ray Analysis
+- Explainable AI (Grad-CAM)
+- Web-Based Deployment
+- Mobile Application Integration
+
+---
+
+## Author
+
+**Aadi Jain**
+
+B.Tech Computer Engineering  
+University of Petroleum and Energy Studies (UPES), Dehradun
+
+GitHub: https://github.com/AadiJain714
+LinkedIn: https://linkedin.com/in/jainaadi
+
+---
+
+## Project Highlights
+
+- Deep Learning Based Medical Imaging Project
+- ResNet50 Transfer Learning Implementation
+- MURA Dataset Integration
+- GUI-Based Prediction System
+- End-to-End Bone Fracture Classification Pipeline
